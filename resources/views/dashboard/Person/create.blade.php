@@ -66,8 +66,8 @@
     </div>
     <div class="form-group row">
         <div class="col-sm-10 offset-sm-2">
-           <button type="submit" class="btn btn-info">Registrar</button>
-           <a href="{{url('dashboard/Person')}}" class="btn btn-dark">Regresar</a>
+           <button type="submit" class="btn btn-info"><b><font color="red">REGISTRAR</font></b></button>
+           <a href="{{url('dashboard/Person')}}" class="btn btn-dark"><b><font color="magenta">REGRESAR</font></b></a>
         </div>
     </div>
   </form>

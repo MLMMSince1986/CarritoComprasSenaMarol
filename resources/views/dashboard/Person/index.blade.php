@@ -6,7 +6,7 @@
 <div class="container py-4">
     <h1>Listado de Personas</h1>
     <br>
-    <a href="{{url('dashboard/Person/create')}}" class="btn btn-info btn-sm"> Nuevo Persona</a>
+    <a href="{{url('dashboard/Person/create')}}" class="btn btn-info btn-sm"><b><font color="yellow">NUEVA PERSONA</font></b></a>
     <table class="table table-success table-striped">
         <thead>
             <tr>
