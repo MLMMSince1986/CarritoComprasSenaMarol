@@ -8,8 +8,11 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\income_detailsController;
 use App\Http\Controllers\IncomeController;
 use App\Http\Controllers\PersonController;
+use App\Http\Controllers\RoleController;
 use App\Http\Controllers\sales_detailsController;
 use App\Http\Controllers\salesController;
+use App\Http\Controllers\UsuarioController;
+
 
 
 Route::get('/', function () {
@@ -30,8 +33,10 @@ Route::middleware('auth')->group(function () {
     Route::resource('/dashboard/income_details',income_detailsController::class);
     Route::resource('/dashboard/Income',IncomeController::class);
     Route::resource('/dashboard/Person',PersonController::class);
+    Route::resource('/dashboard/Role',RoleController::class);
     Route::resource('/dashboard/sales_details',sales_detailsController::class);
     Route::resource('/dashboard/sales',salesController::class); 
+    Route::resource('/dashboard/Usuario',UsuarioController::class); 
 });
 
 

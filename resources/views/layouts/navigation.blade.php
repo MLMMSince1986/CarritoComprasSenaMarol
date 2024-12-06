@@ -27,6 +27,16 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="url('dashboard/Role')" :active="request()->routeIs('Role.*')">
+                        <b><font color="blue">{{ __('ROLES') }}</font></b>
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="url('dashboard/Usuario')" :active="request()->routeIs('Usuario.*')">
+                    <b><font color="black">{{ __('USUARIOS') }}</font></b>
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="url('dashboard/Person')" :active="request()->routeIs('Person.*')">
                         <b><font color="blue">{{ __('PERSONA') }}</font></b>
                     </x-nav-link>
