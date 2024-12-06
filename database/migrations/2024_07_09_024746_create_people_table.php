@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('people', function (Blueprint $table) {
             $table->id();
-            $table->enum('type',['Persona Natural','Empresa','Proveedor'])->notnullable();
+            $table->enum('Type',['Persona Natural','Empresa','Proveedor'])->notnullable();
             $table->string('First_Name',50)->notnullable();
             $table->string('Last_Name',50)->notnullable();
-            $table->enum('Document_type',['CC','TI','Pasaporte','Nit'])->nullable();
+            $table->enum('Document_Type',['CC','TI','Pasaporte','Nit'])->nullable();
             $table->string('Document_Number',20)->nullable();
             $table->string('Adress',100)->nullable();
             $table->string('Phone',20)->nullable();

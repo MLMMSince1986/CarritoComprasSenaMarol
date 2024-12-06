@@ -23,10 +23,10 @@ class PersonApiController extends Controller
     public function store(Request $request)
     {
         $Person=new Person();
-        $Person->Type=$request->input('type');
+        $Person->Type=$request->input('Type');
         $Person->First_Name=$request->input('First_Name');
         $Person->Last_Name=$request->input('Last_Name');
-        $Person->Document_Type=$request->input('Document_type');
+        $Person->Document_Type=$request->input('Document_Type');
         $Person->Document_Number=$request->input('Document_Number');
         $Person->Adress=$request->input('Adress');
         $Person->Phone=$request->input('Phone');
@@ -49,10 +49,10 @@ class PersonApiController extends Controller
     public function update(Request $request, string $id)
     {
         $Person=Person::find($id);
-        $Person->type=$request->input('type');
+        $Person->type=$request->input('Type');
         $Person->First_Name=$request->input('First_Name');
         $Person->Last_Name=$request->input('Last_Name');
-        $Person->Document_type=$request->input('Document_type');
+        $Person->Document_type=$request->input('Document_Type');
         $Person->Document_Number=$request->input('Document_Number');
         $Person->Adress=$request->input('Adress');
         $Person->Phone=$request->input('Phone');

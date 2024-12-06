@@ -8,9 +8,9 @@
     @csrf
     @method('PUT')
     <div class="form-group row">
-        <label for="type" class="col-sm-2 col-form-label"><b><font color="blue">TIPO DE PERSONA</font></b></label>
+        <label for="Type" class="col-sm-2 col-form-label"><b><font color="blue">TIPO DE PERSONA</font></b></label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="type" id="type" value="{{$Person->type}}" placeholder="Persona Natural, Empresa o Proveedor">
+            <input type="text" class="form-control" name="Type" id="Type" value="{{$Person->Type}}" placeholder="Persona Natural, Empresa o Proveedor">
         </div>
     </div>
     <div class="form-group row">
@@ -26,9 +26,9 @@
         </div>
     </div>
     <div class="form-group row">
-        <label for="Document_type" class="col-sm-2 col-form-label"><b><font color="blue">TIPO DE DOCUMENTO</font></b></label>
+        <label for="Document_Type" class="col-sm-2 col-form-label"><b><font color="blue">TIPO DE DOCUMENTO</font></b></label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="Document_type" id="Document_type" value="{{$Person->Document_type}}" placeholder="CC, TI, Pasaporte o NIT">
+            <input type="text" class="form-control" name="Document_Type" id="Document_Type" value="{{$Person->Document_Type}}" placeholder="CC, TI, Pasaporte o NIT">
         </div>
     </div>
     <div class="form-group row">

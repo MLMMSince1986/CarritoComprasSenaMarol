@@ -30,10 +30,10 @@
             @foreach($Person as $Person)
             <tr>
                 <td scope="row">{{$Person->id}}</td>
-                <td>{{$Person->type}}</td>
+                <td>{{$Person->Type}}</td>
                 <td>{{$Person->First_Name}}</td>
                 <td>{{$Person->Last_Name}}</td>
-                <td>{{$Person->Document_type}}</td>
+                <td>{{$Person->Document_Type}}</td>
                 <td>{{$Person->Document_Number}}</td>
                 <td>{{$Person->Adress}}</td>
                 <td>{{$Person->Phone}}</td>

@@ -8,7 +8,7 @@
     <div class="form-group row">
         <label for="type" class="col-sm-2 col-form-label">Tipo de Persona</label>
         <div class="col-sm-10">
-            <select class="form-control" name="type" id="type">
+            <select class="form-control" name="Type" id="Type">
                 <option value="">Seleccione Tipo de Persona</option>
                 <option value="Persona Natural">Persona Natural</option>
                 <option value="Empresa">Empresa</option>
